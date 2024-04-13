@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
     supportShadowMask: 0
-    supportSSR: 0
+    supportSSR: 1
     supportSSRTransparent: 0
     supportSSAO: 1
-    supportSSGI: 0
+    supportSSGI: 1
     supportSubsurfaceScattering: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 1
-    supportVolumetricClouds: 0
+    supportVolumetricClouds: 1
     supportLightLayers: 1
     supportDistortion: 1
     supportTransparentBackface: 1
@@ -63,10 +63,10 @@ MonoBehaviour:
       reflectionCubemapSize: 256
       reflectionCacheCompressed: 1
       reflectionProbeFormat: 74
-      skyReflectionSize: 1024
+      skyReflectionSize: 4096
       skyLightingOverrideLayerMask:
         serializedVersion: 2
-        m_Bits: 0
+        m_Bits: 2147483647
       supportFabricConvolution: 0
       maxDirectionalLightsOnScreen: 16
       maxPunctualLightsOnScreen: 512
@@ -76,7 +76,7 @@ MonoBehaviour:
       maxPlanarReflectionOnScreen: 16
       maxLightsPerClusterCell: 16
       maxLocalVolumetricFogSize: 32
-      maxLocalVolumetricFogOnScreen: 64
+      maxLocalVolumetricFogOnScreen: 158
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 16
@@ -107,7 +107,7 @@ MonoBehaviour:
       maxDirectionalShadowMapResolution: 4096
       maxPunctualShadowMapResolution: 4096
       maxAreaShadowMapResolution: 4096
-      supportScreenSpaceShadows: 0
+      supportScreenSpaceShadows: 1
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
@@ -179,9 +179,9 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     lightingQualitySettings:
-      AOStepCount: 040000000600000010000000
+      AOStepCount: 040000000600000015000000
       AOFullRes: 000001
-      AOMaximumRadiusPixels: 200000002800000050000000
+      AOMaximumRadiusPixels: 200000002800000066000000
       AOBilateralUpsample: 000101
       AODirectionCount: 010000000200000004000000
       ContactShadowSampleCount: 060000000a00000010000000
@@ -198,7 +198,7 @@ MonoBehaviour:
       - 0.5
       - 3
       - 20
-      RTAOSampleCount: 010000000200000008000000
+      RTAOSampleCount: 01000000020000000d000000
       RTAODenoise: 010101
       RTAODenoiserRadius:
       - 0.25
